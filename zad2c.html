@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabele - formularz</title>
+</head>
+<body>
+    <form action="./zad2c.html">
+        <table cellpadding="10px">
+            <tr>
+                <td>Imię</td>
+                <td><input type="text" id="firstname"></td>
+            </tr>
+            <tr>
+                <td>Nazwisko</td>
+                <td><input type="text" id="lastname"></td>
+            </tr>
+            <tr>
+                <td>Ulica</td>
+                <td><input type="text" id="street"></td>
+            </tr>
+            <tr>
+                <td>Numer domu</td>
+                <td><input type="number" id="house_number"></td>
+            </tr>
+            <tr>
+                <td>Numer mieszkania:</td>
+                <td><input type="number" id="apartment_number"></td>
+            </tr>
+
+            <tr>
+                <td>Województwo:</td>
+                <td>
+                    <select id="state">
+                        <option value="">Mazowieckie</option>
+                        <option value="">Lubelskie</option>
+                        <option value="">Podlaskie</option>
+                        <option value="">Śląskie</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Data urodzenia:</td>
+                <td><input type="date" id="birthdate"></td>
+            </tr>
+            <tr>
+                <td>Płeć:</td>
+                <td><input type="radio" name="gender" id="gender1">Kobieta</td>
+                <td><input type="radio" name="gender" id="gender2">Mężczyzna</td>
+                <td><input type="radio" name="gender" id="gender3">N/A</td>
+            </tr>
+            <tr>
+                <td>Telefon:</td>
+                <td><input type="number" id="phone"></td>
+            </tr>
+
+            <tr><td>Komentarz:</td></tr>
+            <tr><td colspan="4"><textarea cols="90" rows="10" placeholder="Enter text here..." id="comment"></textarea></td></tr>
+            <tr><td><input type="submit" value="Submit"></td></tr>
+        </table>
+    </form>
+</body>
+</html>

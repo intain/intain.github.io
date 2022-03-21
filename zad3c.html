@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - formularz</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 30em;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="./zad3c.html">
+        <div class="container">
+            <div class="row">
+                <div>Imię</div>
+                <div><input type="text" id="firstname"></div>
+            </div>
+            <div class="row">
+                <div>Nazwisko</div>
+                <div><input type="text" id="lastname"></div>
+            </div>
+            <div class="row">
+                <div>Ulica</div>
+                <div><input type="text" id="street"></div>
+            </div>
+            <div class="row">
+                <div>Numer domu</div>
+                <div><input type="number" id="house_number"></div>
+            </div>
+            <div class="row">
+                <div>Numer mieszkania:</div>
+                <div><input type="number" id="apartment_number"></div>
+            </div class="row">
+
+            <div class="row">
+                <div>Województwo:</div>
+                <div>
+                    <select id="state">
+                        <option value="">Mazowieckie</option>
+                        <option value="">Lubelskie</option>
+                        <option value="">Podlaskie</option>
+                        <option value="">Śląskie</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div>Data urodzenia:</div>
+                <div><input type="date" id="birthdate"></div>
+            </div>
+            <div class="row">
+                <div>Płeć:</div>
+                <div><input type="radio" name="gender" id="gender1">Kobieta</div>
+                <div><input type="radio" name="gender" id="gender2">Mężczyzna</div>
+                <div><input type="radio" name="gender" id="gender3">N/A</div>
+            </div>
+            <div class="row">
+                <div>Telefon:</div>
+                <div><input type="number" id="phone"></div>
+            </div>
+
+            <div>Komentarz:</div>
+            <div><textarea cols="60" rows="10" placeholder="Enter text here..." id="comment"></textarea></div>
+            <div><input type="submit" value="Submit"></div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - galeria</title>
+
+    <style>
+        .cell {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 10%;
+        }
+
+        .container {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="cell">
+                <img src="./img/brazil.jpg" alt="Brazilian Flag">
+                <p>Brazil</p>
+            </div>
+            <div class="cell">
+                <img src="./img/canada.jpg" alt="Canadian Flag">
+                <p>Canada</p>
+            </div>
+            <div class="cell">
+                <img src="./img/china.jpg" alt="China Flag">
+                <p>China</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <img src="./img/france.jpg" alt="French Flag">
+                <p>France</p>
+            </div>
+            <div class="cell">
+                <img src="./img/gb.jpg" alt="British Flag">
+                <p>Great Britain</p>
+            </div>
+            <div class="cell">
+                <img src="./img/germany.jpg" alt="German Flag">
+                <p>Germany</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell">
+                <img src="./img/india.jpg" alt="India Flag">
+                <p>India</p>
+            </div>
+            <div class="cell">
+                <img src="./img/italy.jpg" alt="Italian Flag">
+                <p>Italy</p>
+            </div>
+            <div class="cell">
+                <img src="./img/japan.jpg" alt="Japanese Flag">
+                <p>Japan</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
