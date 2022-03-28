@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="zad4.xslt"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <nr>4793</nr>
+    <miejscowosc>Warszawa</miejscowosc>
+    <data_wystawienia>26.03.2022</data_wystawienia>
+    <data_sprzedazy>27.03.2022</data_sprzedazy>
+    <sprzedawca>Kowalski Jan</sprzedawca>
+    <sprzedawca_nip>1234563218</sprzedawca_nip>
+    <sprzedawca_nr_bank>34123</sprzedawca_nr_bank>
+    <termin_zaplaty>27.04.2022</termin_zaplaty>
+    <nabywca>Janowski Kowal</nabywca>
+    <nabywca_nip>9876547892</nabywca_nip>
+
+    <item>
+        <lp>1</lp>
+        <nazwa>Pumpernikiel</nazwa>
+        <ilosc>3</ilosc>
+        <cena_jedn>2</cena_jedn>
+        <cena_jedn_gr>50</cena_jedn_gr>
+        <wartosc>7</wartosc>
+        <wartosc_gr>50</wartosc_gr>
+    </item>
+    <item>
+        <lp>2</lp>
+        <nazwa>Diament</nazwa>
+        <ilosc>98</ilosc>
+        <cena_jedn>1000</cena_jedn>
+        <cena_jedn_gr>0</cena_jedn_gr>
+        <wartosc>98000</wartosc>
+        <wartosc_gr>0</wartosc_gr>
+    </item>
+    <item>
+        <lp>3</lp>
+        <nazwa>Kontener gruzu</nazwa>
+        <ilosc>1</ilosc>
+        <cena_jedn>89</cena_jedn>
+        <cena_jedn_gr>99</cena_jedn_gr>
+        <wartosc>89</wartosc>
+        <wartosc_gr>99</wartosc_gr>
+    </item>
+
+    <razem>98097</razem>
+    <razem_gr>49</razem_gr>
+
+</data>

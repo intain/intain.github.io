@@ -1,0 +1,131 @@
+body
+{
+    font-size: 24px;
+    background-image: url("img/faktura.jpg");
+    background-repeat: no-repeat;
+    background-color: white;
+    height: 804px;
+}
+
+.nr{
+    position: absolute;
+    left: 560px;
+    top: 70px;
+}
+
+.miejscowosc {
+    position: absolute;
+    left: 870px;
+    top: 55px;
+}
+
+.data_wystawienia {
+    position: absolute;
+    left: 758px;
+    top: 104px;
+}
+
+.data_sprzedazy {
+    position: absolute;
+    left: 989px;
+    top: 104px;
+}
+
+.sprzedawca {
+    position: absolute;
+    left: 115px;
+    top: 180px;
+}
+
+.sprzedawca_nip {
+    position: absolute;
+    left: 115px;
+    top: 256px;
+}
+
+.sprzedawca_bank {
+    position: absolute;
+    left: 79px;
+    top: 297px;
+}
+
+.termin {
+    position: absolute;
+    left: 404px;
+    top: 297px;
+}
+
+.nabywca {
+    position: absolute;
+    left: 726px;
+    top: 180px;
+}
+
+.nabywca_nip {
+    position: absolute;
+    left: 712px;
+    top: 256px;
+}
+
+.razem {
+    position: absolute;
+    left: 702px;
+    top: 622px;
+}
+
+.razem_gr {
+    position: absolute;
+    left: 798px;
+    top: 622px;
+}
+
+.items{
+    position: absolute;
+    left: 36px;
+    top: 411px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item {
+    width: 800px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.lp {
+    position: absolute;
+    left: 2px;
+}
+
+.nazwa {
+    position: absolute;
+    left: 36px;
+}
+
+.ilosc {
+    position: absolute;
+    left: 475px;
+}
+.cena_jedn {
+    position: absolute;
+    left: 550px;
+}
+.cena_jedn_gr {
+    position: absolute;
+    left: 627px;
+}
+.wartosc {
+    position: absolute;
+    left: 662px;
+}
+
+.wartosc_gr {
+    position: absolute;
+    left: 760px;
+}
+
+
