@@ -1,7 +1,7 @@
 body
 {
     font-size: 24px;
-    background-image: url("img/faktura.jpg");
+    background-image: url("./img/faktura.jpg");
     background-repeat: no-repeat;
     background-color: white;
     height: 804px;
