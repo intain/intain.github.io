@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jan Bartnicki - Zadanie5</title>
+		<style>
+			.display {
+				font-size: 24px;
+				resize: none;
+			}
+			tr {
+				text-align: center;
+			}
+			button {
+				text-align: center;
+				font-size: 32px;
+				width: 48px;
+				height: 48px;
+			}
+		</style>
+		<script>
+			function input_number(number) {
+				display = document.getElementById("display");
+				if(display.innerHTML=="0") {
+					display.innerHTML = number;
+				} else {
+					display.innerHTML += number;
+				}
+			}
+			
+			function input_symbol(symbol) {
+				display = document.getElementById("display");
+				str = display.innerHTML;
+				last_char = str[str.length - 1];
+				if(last_char >= "0" && last_char <= "9") {
+					display.innerHTML += symbol;
+				}
+			}
+			
+			function equals() {
+				display = document.getElementById("display");
+				display.innerHTML = eval(display.innerHTML);
+			}
+			
+			function dot() {
+				display = document.getElementById("display");
+				for(let i = display.innerHTML.length - 1; i >= 0; i--) {
+					if(display.innerHTML[i] == ".") return;
+					if(display.innerHTML[i] < "0" || display.innerHTML[i] > "9") {
+						display.innerHTML += ".";
+						return;
+					}
+				}
+				
+				display.innerHTML += ".";
+			}
+		</script>
+		
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td colspan="4">
+					<textarea id="display" name="display" rows="1" cols="20" class="display" disabled>0</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td><button type="button" onclick="input_number(7)">7</button></td>
+				<td><button type="button" onclick="input_number(8)">8</button></td>
+				<td><button type="button" onclick="input_number(9)">9</button></td>
+				<td><button type="button" onclick="input_symbol('/')">/</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" onclick="input_number(4)">4</button></td>
+				<td><button type="button" onclick="input_number(5)">5</button></td>
+				<td><button type="button" onclick="input_number(6)">6</button></td>
+				<td><button type="button" onclick="input_symbol('*')">*</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" onclick="input_number(1)">1</button></td>
+				<td><button type="button" onclick="input_number(2)">2</button></td>
+				<td><button type="button" onclick="input_number(3)">3</button></td>
+				<td><button type="button" onclick="input_symbol('-')">-</button></td>
+			</tr>
+			<tr>
+				<td><button type="button" onclick="input_number(0)">0</button></td>
+				<td><button type="button" onclick="dot()">.</button></td>
+				<td><button type="button" onclick="equals()">=</button></td>
+				<td><button type="button" onclick="input_symbol('+')">+</button></td>
+			</tr>
+		</table>
+	</body>
+</html>
+	
