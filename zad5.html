@@ -54,6 +54,10 @@
 				
 				display.innerHTML += ".";
 			}
+			
+			function clear() {
+				document.getElementById("display").innerHTML = "";
+			}
 		</script>
 		
 	</head>
@@ -87,6 +91,7 @@
 				<td><button type="button" onclick="dot()">.</button></td>
 				<td><button type="button" onclick="equals()">=</button></td>
 				<td><button type="button" onclick="input_symbol('+')">+</button></td>
+				<td><button type="button" onclick="clear()">CE</button></td>
 			</tr>
 		</table>
 	</body>
