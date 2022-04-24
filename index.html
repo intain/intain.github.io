@@ -15,7 +15,19 @@
     </style>
 </head>
 <body>
+    <?php
+		if(isset($_SESSION["loggedIn"] == false || $_SESSION["loggedIn"] == false)
+		{
+			header("Location:login.php");
+		}
+	?>
+    
     <h1>Strona Jana Bartnickiego</h1>
+    <form method="POST" action="logout.php">
+		<button type="submit">Wyloguj</button>
+	</form>
+    <br>
+    
     <div class="zad"><a href="./index.html">Zad 1</a></div>
     <div class="zad">
         <div class="subzad"><a href="./zad2a.html">Zad 2a</a></div>
