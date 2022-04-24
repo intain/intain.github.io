@@ -13,7 +13,7 @@
 			if($_GET["login"] == "login" && $_GET["password"] == "1234")
 			{
 				$_SESSION["loggedIn"] = true;
-				header("Location:index.php");
+				header("Location:index.html");
 			} 
 			else
 			{
